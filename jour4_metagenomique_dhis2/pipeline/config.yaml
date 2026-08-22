@@ -1,0 +1,53 @@
+# =============================================================================
+# Configuration du pipeline — Exercice 3, Jour 4
+# Formation Bio-informatique INSP 2026
+# =============================================================================
+# Ce fichier centralise tous les paramètres modifiables du pipeline.
+# Les participants n'ont normalement besoin de modifier QUE ce fichier,
+# jamais le Snakefile lui-même.
+
+# --- Échantillons ---------------------------------------------------------
+# Un identifiant par échantillon ; le pipeline attend pour chacun deux fichiers
+# data/raw/{sample}_R1.fastq.gz et data/raw/{sample}_R2.fastq.gz
+# Pour l'exercice "pipeline sur 5 échantillons" (cf. Jour 3), il suffit
+# d'ajouter les identifiants correspondants ici, ex:
+#   samples: ["sample1", "sample2", "sample3", "sample4", "sample5"]
+samples:
+  - "sample"
+
+# --- Chemins ----------------------------------------------------------------
+raw_dir: "data/raw"
+results_dir: "results"
+
+# --- Fastp (Jour 2) -----------------------------------------------------
+fastp:
+  qualified_quality_phred: 20   # seuil Phred sous lequel une base est "non qualifiée"
+  length_required: 50           # longueur minimale d'un read après trimming
+
+# --- Kraken2 / Bracken (Jour 4) ------------------------------------------
+# EN FORMATION (données factices) : la mini-base fournie dans test_kraken2_db/
+# permet de vérifier que le pipeline s'exécute correctement de bout en bout.
+# Elle ne contient qu'une séquence factice : la classification sera donc
+# proche de 0 % — c'est normal et attendu, seul le bon déroulement du
+# pipeline compte à ce stade.
+#
+# SUR LE SERVEUR INSP (données réelles) : remplacer ce chemin par la base
+# Kraken2 officielle installée sur le serveur, par exemple :
+#   kraken2_db: "/data/db/kraken2_standard"
+kraken2_db: "test_kraken2_db"
+
+run_kraken2: true
+
+# Bracken affine les abondances estimées par Kraken2. Nécessite le paquet
+# `bracken` (disponible via bioconda sur le serveur INSP, pas dans cet
+# environnement de test) — désactivé par défaut ici.
+run_bracken: false
+bracken_read_len: 150
+bracken_level: "S"   # S=espèce, G=genre, F=famille...
+
+# Krona : visualisation interactive du profil taxonomique. Nécessite
+# KronaTools (kreport2krona.py, ktImportText) installé sur le serveur INSP.
+run_krona: false
+
+# --- Ressources ---------------------------------------------------------
+threads: 2

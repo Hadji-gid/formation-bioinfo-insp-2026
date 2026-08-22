@@ -1,0 +1,24 @@
+# Fichiers temporaires / système
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+
+# Résultats générés localement pendant les exercices (ne pas versionner)
+results/
+processed/
+*.sam
+*.bam
+*.bai
+
+# Fichiers de configuration locale
+.env
+
+# Pipeline Snakemake Jour 4 : ne pas versionner les résultats d'exécution
+jour4_metagenomique_dhis2/pipeline/results/
+jour4_metagenomique_dhis2/pipeline/.snakemake/
+jour4_metagenomique_dhis2/pipeline/logs/
+
+# Environnement local (artefacts de build, non versionnés)
+local_environment/*.tar
+.mamba/

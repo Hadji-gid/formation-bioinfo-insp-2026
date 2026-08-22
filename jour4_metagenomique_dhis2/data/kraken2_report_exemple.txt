@@ -1,0 +1,16 @@
+ 45.23	904	904	U	0	unclassified
+ 54.77	1095	12	R	1	root
+ 53.12	1062	0	D	2      Bacteria
+ 31.44	628	3	P	1224     Proteobacteria
+ 18.90	378	145	G	561        Escherichia
+  8.35	167	167	S	562          Escherichia coli
+  6.72	134	5	G	590        Salmonella
+  5.90	118	118	S	28901        Salmonella enterica
+ 12.05	241	9	P	1239     Firmicutes
+  7.15	143	143	S	1280       Staphylococcus aureus
+  3.44	69	69	S	1613       Streptococcus pneumoniae
+  2.10	42	4	P	201174   Actinobacteria
+  1.80	36	36	S	1773       Mycobacterium tuberculosis
+  1.02	20	20	D	10239    Viruses
+  0.55	11	11	S	11320      Influenza A virus
+  0.30	6	6	S	2697049    Severe acute respiratory syndrome coronavirus 2

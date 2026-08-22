@@ -1,0 +1,21 @@
+name: insp-bioinfo
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - fastqc=0.12.1
+  - fastp=0.23.4
+  - bowtie2
+  - minimap2
+  - spades
+  - kraken2=2.1.3
+  - bracken
+  - krona
+  - ncbi-amrfinderplus
+  - snakemake-minimal>=8
+  - multiqc
+  - samtools
+  - seqkit
+  - pip

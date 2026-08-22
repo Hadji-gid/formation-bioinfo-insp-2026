@@ -1,0 +1,32 @@
+{
+  "dataSet": "SURVEILLANCE_GENOMIQUE_INSP",
+  "completeDate": "2026-07-15",
+  "orgUnit": "INSP_CRPE_BAMAKO",
+  "period": "20260715",
+  "dataValues": [
+    {
+      "dataElement": "PATHOGENE_DETECTE",
+      "value": "SARS-CoV-2"
+    },
+    {
+      "dataElement": "VARIANT_LIGNEE_PANGO",
+      "value": "XBB.1.16 (exemple)"
+    },
+    {
+      "dataElement": "NB_ECHANTILLONS_SEQUENCES",
+      "value": "5"
+    },
+    {
+      "dataElement": "PROFIL_ARG_DETECTE",
+      "value": "blaCTX-M-15;tetA;mcr-1.1"
+    },
+    {
+      "dataElement": "STATUT_ANALYSE",
+      "value": "VALIDE"
+    },
+    {
+      "dataElement": "REGION",
+      "value": "Bamako"
+    }
+  ]
+}

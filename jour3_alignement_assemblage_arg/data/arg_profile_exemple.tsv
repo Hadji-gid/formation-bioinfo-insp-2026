@@ -1,0 +1,6 @@
+Protein identifier	Gene symbol	Sequence name	Scope	Element type	Element subtype	Class	Subclass	Method	Target length	Reference sequence length	% Coverage of reference	% Identity to reference	Contig id	Start	Stop
+sample05_ctg1_001	blaCTX-M-15	extended-spectrum beta-lactamase	core	AMR	AMR	BETA-LACTAM	CEPHALOSPORIN	ALLELEX	876	876	100.0	99.89	contig_1	12045	12920
+sample05_ctg2_014	tetA	tetracycline efflux pump	core	AMR	AMR	TETRACYCLINE	TETRACYCLINE	BLASTX	1200	1194	98.7	97.42	contig_2	3201	4400
+sample05_ctg3_003	sul1	dihydropteroate synthase	core	AMR	AMR	SULFONAMIDE	SULFONAMIDE	ALLELEX	840	840	100.0	100.00	contig_3	560	1399
+sample05_ctg1_022	aac(6')-Ib-cr	aminoglycoside/fluoroquinolone modifying enzyme	core	AMR	AMR	AMINOGLYCOSIDE/QUINOLONE	AMINOGLYCOSIDE	BLASTX	600	600	100.0	98.83	contig_1	20110	20709
+sample05_ctg4_007	mcr-1.1	mobile colistin resistance	core	AMR	AMR	COLISTIN	COLISTIN	ALLELEX	1626	1626	100.0	99.94	contig_4	102	1727

@@ -1,0 +1,20 @@
+services:
+  bioinfo:
+    build: .
+    image: insp-bioinfo:2026
+    container_name: insp-formation-bioinfo
+    volumes:
+      - ../:/formation
+    working_dir: /formation
+    tty: true
+    stdin_open: true
+
+  # Serveur SSH simulé — pour pratiquer l'Exercice 2 du Jour 1
+  # (connexion SSH) sans dépendre du vrai serveur INSP/CRPE.
+  ssh-server:
+    build: ./ssh_server
+    image: insp-ssh-server:2026
+    container_name: insp-ssh-server
+    ports:
+      - "2222:22"
+    restart: unless-stopped
